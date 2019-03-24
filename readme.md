@@ -82,7 +82,7 @@ Deve-se seguir os seguintes comandos no Linux Ubuntu
 - sudo apt-get install composer
 - sudo a2enmod php7.2
 
-Instale Dentro da pasta do Projeto o Composer com o comando
+Instale as dependências do projeto com o comando:
 
 - composer install
 
