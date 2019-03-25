@@ -1,0 +1,7 @@
+html{
+    /* background-color: red; */
+    background-image: url(../fundo.svg);
+}
+body{
+    background-color: rgba(0,0, 0, 0)
+}
