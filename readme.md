@@ -97,4 +97,4 @@ Para criar as tabelas no banco rode
 
 - php artisan migrate
 
-Para o Windows procure tutoriais pois não sabemos e o Composer se acha aqui https://getcomposer.org/
+Para o Windows procure tutoriais pois não sabemos e o Composer se acha aqui https://getcomposer.org/.
