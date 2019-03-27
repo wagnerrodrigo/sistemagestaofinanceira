@@ -13,3 +13,12 @@ body{
     border: 1px solid white;
     color: white
 }
+.btn{
+    background-color:#312D2E;
+    color: white;
+    border: 1px solid whitesmoke;
+}
+/* TODO
+    alterar a cor do btn ao passar o mouse
+    alterar a lagura da margen de sinalização
+*/
