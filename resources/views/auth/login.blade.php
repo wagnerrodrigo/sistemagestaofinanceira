@@ -17,11 +17,11 @@
                         @csrf
 
                         <div class="form-group">
-                            <label for="email" class="col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
+                            <label for="email" class="col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                             <div>
-                                <input id="email" type="email"
-                                    class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }} inp-form"
+                                <input autocomplete="off" id="email" type="email"
+                                    class="{{ $errors->has('email') ? ' is-invalid' : '' }} inp-form"
                                     name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
@@ -33,11 +33,11 @@
                         </div>
 
                         <div class="form-group">
-                            <label for="password" class="col-form-label text-md-right">{{ __('Password') }}</label>
+                            <label for="password" class="col-form-label text-md-right">{{ __('Senha') }}</label>
 
                             <div>
                                 <input id="password" type="password"
-                                    class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }} inp-form"
+                                    class="{{ $errors->has('password') ? ' is-invalid' : '' }} inp-form"
                                     name="password" required>
 
                                 @if ($errors->has('password'))
@@ -55,7 +55,7 @@
                                         {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
+                                        {{ __('Lembrar login') }}
                                     </label>
                                 </div>
                             </div>
@@ -74,7 +74,7 @@
                                         {{ __('Esqueci a senha?') }}
                                     </a>
                                     @endif
-                                    <a class="btn btn-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="btn btn-link" href="{{ route('register') }}">{{ __('Cadastrar') }}</a>
                                 </div>
                             </div>
                         </div>
