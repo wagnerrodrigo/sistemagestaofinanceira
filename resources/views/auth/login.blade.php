@@ -1,5 +1,5 @@
 @extends('layouts.appLogin')
-<link rel="stylesheet" href="../../../sass/styleM.css">
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
