@@ -1,5 +1,5 @@
 @extends('layouts.appLogin')
-
+<link rel="stylesheet" href="../../../sass/styleM.css">
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -20,9 +20,7 @@
                             <label for="email" class="col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                             <div>
-                                <input autocomplete="off" id="email" type="email"
-                                    class="{{ $errors->has('email') ? ' is-invalid' : '' }} inp-form"
-                                    name="email" value="{{ old('email') }}" required autofocus>
+                                <input autocomplete="off" id="email" type="email" class="{{ $errors->has('email') ? ' is-invalid' : '' }} inp-form" name="email" value="{{ old('email') }}" required autofocus>
 
                                 @if ($errors->has('email'))
                                 <span class="invalid-feedback" role="alert">
@@ -36,9 +34,7 @@
                             <label for="password" class="col-form-label text-md-right">{{ __('Senha') }}</label>
 
                             <div>
-                                <input id="password" type="password"
-                                    class="{{ $errors->has('password') ? ' is-invalid' : '' }} inp-form"
-                                    name="password" required>
+                                <input id="password" type="password" class="{{ $errors->has('password') ? ' is-invalid' : '' }} inp-form" name="password" required>
 
                                 @if ($errors->has('password'))
                                 <span class="invalid-feedback" role="alert">
@@ -51,8 +47,7 @@
                         <div class="form-group row">
                             <div class="col-md-6 offset-md-4">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember"
-                                        {{ old('remember') ? 'checked' : '' }}>
+                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <label class="form-check-label" for="remember">
                                         {{ __('Lembrar login') }}
