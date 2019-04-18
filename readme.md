@@ -69,3 +69,35 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Rodando Localmente
+
+Deve-se seguir os seguintes comandos no Linux Ubuntu
+
+- sudo add-apt-repository ppa:ondrej/php
+- sudo apt update
+- sudo apt-get install php7.2 php7.2-common php7.2-cli php7.2-fpm apache2
+- sudo apt-get install libapache2-mod-php7.2 php7.2-xml php7.2-opcache php7.2-mbstring
+- sudo apt-get install php7.2-mysql mysql-server-5.7 mysql-client-5.7 
+- sudo apt-get install composer
+- sudo a2enmod php7.2
+
+Instale as dependências do projeto com o comando:
+
+- composer install
+
+Configure um arquivo .env dentro da pasta do Projeto
+Crie o banco de dados da aplicação.
+
+Agora rode o servidor
+
+- php artisan serve
+
+Para criar as tabelas no banco rode
+
+- php artisan migrate
+
+Para o Windows procure tutoriais pois não sabemos e o Composer se acha aqui https://getcomposer.org/.
+
+- O Bootstrap está na pasta public/css com o nome de app.css seguindo o padrão do Laravel.
+
