@@ -100,4 +100,5 @@ Para criar as tabelas no banco rode
 Para o Windows procure tutoriais pois não sabemos e o Composer se acha aqui https://getcomposer.org/.
 
 - O Bootstrap está na pasta public/css com o nome de app.css seguindo o padrão do Laravel.
+- 
 
